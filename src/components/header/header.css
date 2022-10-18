@@ -8,6 +8,7 @@
 	position: absolute;
 	font-weight: bold;
 	font-size: 3.4rem;
+	color: #2b2d26;
 	left: 0;
 	bottom: 1rem;
 }
@@ -26,5 +27,5 @@
 }
 
 .header button:hover {
-	background-color: #00dc6e;
+	background-color: #00da6d;
 }
