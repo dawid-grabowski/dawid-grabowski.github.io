@@ -1,0 +1,24 @@
+nav ul {
+	position: absolute;
+	left: 16rem;
+	top: 2rem;
+	list-style-type: none;
+	cursor: default;
+}
+
+nav ul li {
+	display: inline-block;
+}
+
+nav ul li a {
+	font-size: 1.6rem;
+	padding: 0 2rem;
+	text-decoration: none;
+	color: #787a7c;
+	transition: color 0.2s ease-in-out;
+}
+
+nav ul li a:hover {
+	color: #02cc67;
+	cursor: pointer;
+}
