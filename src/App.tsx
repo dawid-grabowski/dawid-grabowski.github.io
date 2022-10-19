@@ -1,6 +1,7 @@
 import React from 'react';
 import './app.css';
 import FAQ from './components/faq/FAQ';
+import Footer from './components/footer/Footer';
 import Header from './components/header/Header';
 import Hero from './components/hero/Hero';
 import Info from './components/info/Info';
@@ -18,6 +19,7 @@ const App: React.FC = (): React.ReactElement => {
 				<Info />
 			</div>
 			<Newsletter />
+			<Footer />
 		</>
 	);
 };
