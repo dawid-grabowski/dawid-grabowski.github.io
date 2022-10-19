@@ -3,7 +3,7 @@ import './faq.css';
 import { faqData, IFaqData } from '../../utils/faqData';
 
 const FAQ: React.FC = (): React.ReactElement => {
-	const [openedDetails, setOpenedDetails] = useState<number[]>([0]);
+	const [openedDetails, setOpenedDetails] = useState<number[]>([1]);
 
 	const handleOpenedDetails = (index: number): void => {
 		if (openedDetails.some(number => number === index)) {
