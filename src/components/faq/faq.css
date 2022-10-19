@@ -1,0 +1,74 @@
+section {
+	padding: 4.8rem 0;
+}
+
+section h2 {
+	text-align: center;
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+section details {
+	position: relative;
+	padding-top: 2.4rem;
+	padding-bottom: 4rem;
+	border-bottom: 1px solid #2b2d26;
+}
+
+section details > summary {
+	list-style: none;
+	cursor: pointer;
+}
+
+section details > summary::-webkit-details-marker {
+	display: none;
+}
+
+section details summary button {
+	position: absolute;
+	top: 4rem;
+	right: 0;
+	width: 4.4rem;
+	height: 4.4rem;
+	border-radius: 50%;
+	border: 0.3rem solid #29cc6a;
+	color: #29cc6a;
+	background: transparent;
+	cursor: pointer;
+	z-index: -1;
+}
+
+section details summary button .button-first-line,
+section details summary button .button-second-line {
+	content: '';
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	height: 0.3rem;
+	width: 70%;
+	background-color: #29cc6a;
+	border-radius: 0.3rem;
+}
+
+section details summary button .button-first-line {
+	height: 70%;
+	width: 0.3rem;
+	transition: height 0.3s ease-in-out;
+}
+
+section details summary h3 {
+	color: #2b2d26;
+	font-weight: bold;
+	font-size: 2.8rem;
+}
+
+section details p {
+	padding-top: 4rem;
+}
+
+section details p,
+section details span {
+	color: #2b2d26;
+	font-size: 1.6rem;
+}
