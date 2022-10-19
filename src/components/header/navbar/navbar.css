@@ -22,3 +22,9 @@ nav ul li a:hover {
 	color: #02cc67;
 	cursor: pointer;
 }
+
+@media (max-width: 1199.98px) {
+	nav {
+		display: none;
+	}
+}

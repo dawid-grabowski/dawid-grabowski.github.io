@@ -30,3 +30,14 @@
 .header button:hover {
 	background-color: #00da6d;
 }
+
+@media (max-width: 1199.98px) {
+	.header {
+		display: flex;
+		justify-content: flex-end;
+	}
+
+	.header button {
+		display: none;
+	}
+}
