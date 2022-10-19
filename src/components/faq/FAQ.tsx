@@ -21,7 +21,7 @@ const FAQ: React.FC = (): React.ReactElement => {
 			{faqData.map(({ title, description }: IFaqData, index: number) => {
 				const incrementedIndex: number = index + 1;
 				return (
-					<details key={index} open={incrementedIndex === 0 ? true : false}>
+					<details key={index} open={incrementedIndex === 1 ? true : false}>
 						<summary onClick={() => handleOpenedDetails(incrementedIndex)}>
 							<span>{incrementedIndex < 10 ? `0${incrementedIndex}.` : `${incrementedIndex}.`}</span>
 							<h3>{title}</h3>
