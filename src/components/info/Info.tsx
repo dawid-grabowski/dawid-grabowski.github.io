@@ -7,7 +7,7 @@ import BatteryCard from './cards/BatteryCard';
 
 const Info: React.FC = (): React.ReactElement => {
 	return (
-		<section className='info'>
+		<summary className='info'>
 			<div className='info-text'>
 				<h2>Massa tempor nec feugiat nisl pretium fusce</h2>
 				<p>
@@ -26,7 +26,7 @@ const Info: React.FC = (): React.ReactElement => {
 				<RobotCard />
 				<BatteryCard />
 			</div>
-		</section>
+		</summary>
 	);
 };
 
