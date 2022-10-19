@@ -19,14 +19,15 @@ const FAQ: React.FC = (): React.ReactElement => {
 		<section>
 			<h2>Lacinia quis vel eros tempor orci.</h2>
 			{faqData.map(({ title, description }: IFaqData, index: number) => {
+				const incrementedIndex: number = index + 1;
 				return (
-					<details key={index} open={index === 0 ? true : false}>
-						<summary onClick={() => handleOpenedDetails(index)}>
-							<span>{index < 10 ? `0${index}.` : `${index}.`}</span>
+					<details key={index} open={incrementedIndex === 0 ? true : false}>
+						<summary onClick={() => handleOpenedDetails(incrementedIndex)}>
+							<span>{incrementedIndex < 10 ? `0${incrementedIndex}.` : `${incrementedIndex}.`}</span>
 							<h3>{title}</h3>
 							<button>
 								<div
-									style={openedDetails.some((number: number) => number === index) ? { height: 0 } : {}}
+									style={openedDetails.some((number: number) => number === incrementedIndex) ? { height: 0 } : {}}
 									className='button-first-line'></div>
 								<div className='button-second-line'></div>
 							</button>
