@@ -16,7 +16,7 @@ const FAQ: React.FC = (): React.ReactElement => {
 	};
 
 	return (
-		<section>
+		<section className='faq'>
 			<h2>Lacinia quis vel eros tempor orci.</h2>
 			{faqData.map(({ title, description }: IFaqData, index: number) => {
 				const incrementedIndex: number = index + 1;
