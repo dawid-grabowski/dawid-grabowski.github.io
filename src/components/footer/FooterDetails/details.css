@@ -1,0 +1,26 @@
+.footer-details {
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	gap: 10rem;
+	width: 100%;
+}
+
+.footer-products {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-direction: column;
+	gap: 2rem;
+}
+
+.footer-products h3 {
+	font-weight: bold;
+	font-size: 2rem;
+}
+
+.footer-products a {
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.6rem;
+}

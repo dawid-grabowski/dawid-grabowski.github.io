@@ -1,0 +1,16 @@
+.footer-info {
+	display: flex;
+	justify-content: flex-start;
+	gap: 2.5rem;
+	width: 100%;
+	padding: 1rem 0;
+	border-top: 0.2rem solid #29cc6a;
+}
+
+.footer-info p,
+.footer-info a {
+	display: inline;
+	font-size: 1.4rem;
+	color: #fff;
+	text-decoration: none;
+}
