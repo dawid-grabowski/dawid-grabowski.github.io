@@ -5,7 +5,7 @@ import { faqData, IFaqData } from '../../utils/faqData';
 const FAQ: React.FC = (): React.ReactElement => {
 	const [openedDetails, setOpenedDetails] = useState<number[]>([0]);
 
-	const appendOpenedDetails = (index: number): void => {
+	const handleOpenedDetails = (index: number): void => {
 		if (openedDetails.some(number => number === index)) {
 			const filteredDetails = openedDetails.filter((number: number) => number !== index);
 
@@ -21,7 +21,7 @@ const FAQ: React.FC = (): React.ReactElement => {
 			{faqData.map(({ title, description }: IFaqData, index: number) => {
 				return (
 					<details key={index} open={index === 0 ? true : false}>
-						<summary onClick={() => appendOpenedDetails(index)}>
+						<summary onClick={() => handleOpenedDetails(index)}>
 							<span>{index < 10 ? `0${index}.` : `${index}.`}</span>
 							<h3>{title}</h3>
 							<button>
