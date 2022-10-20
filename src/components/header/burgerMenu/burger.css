@@ -1,4 +1,4 @@
-.burger-menu {
+.burger-icon {
 	display: none;
 	position: absolute;
 	top: 50%;
@@ -9,8 +9,8 @@
 	cursor: pointer;
 }
 
-.burger-menu::before,
-.burger-menu::after {
+.burger-icon::before,
+.burger-icon::after {
 	content: '';
 	position: absolute;
 	bottom: 0;
@@ -21,21 +21,41 @@
 	transition: background-color 0.2s ease-in-out;
 }
 
-.burger-menu::before {
-	top: 0rem;
-}
-
-.burger-menu::after {
-	bottom: 0;
-}
-
-.burger-menu:hover::after,
-.burger-menu:hover::before {
+.burger-icon:hover::before,
+.burger-icon:hover::after {
 	background-color: #02cc67;
 }
 
+.burger-icon::before {
+	top: 0rem;
+}
+
+.burger-icon::after {
+	bottom: 0;
+}
+
+.burger-menu {
+	position: fixed;
+	top: 0;
+	right: 0;
+	height: 100%;
+	width: 35%;
+	z-index: 10;
+	background-color: #02cc67;
+	box-shadow: rgba(66, 66, 66, 0.15) 0px 3px 8px;
+	transition: transform 0.2s ease-in-out;
+}
+
+.open-menu {
+	transform: translateX(0);
+}
+
+.close-menu {
+	transform: translateX(110%);
+}
+
 @media (max-width: 1199.98px) {
-	.burger-menu {
+	.burger-icon {
 		display: block;
 	}
 }
