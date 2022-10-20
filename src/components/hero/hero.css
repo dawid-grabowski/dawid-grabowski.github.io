@@ -55,3 +55,19 @@ main .hero-header-special {
 main .hero-image {
 	width: 60%;
 }
+
+@media (max-width: 991.98px) {
+	main .hero-image {
+		display: none;
+	}
+
+	main .hero-content {
+		align-items: center;
+		width: 100%;
+		text-align: center;
+	}
+
+	main .hero-content p {
+		padding-right: 0;
+	}
+}
