@@ -23,4 +23,9 @@
 	color: #fff;
 	text-decoration: none;
 	font-size: 1.6rem;
+	transition: color 0.2s ease-in-out;
+}
+
+.footer-products a:hover {
+	color: #29cc6a;
 }

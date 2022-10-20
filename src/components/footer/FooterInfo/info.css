@@ -13,4 +13,9 @@
 	font-size: 1.4rem;
 	color: #fff;
 	text-decoration: none;
+	transition: color 0.2s ease-in-out;
+}
+
+.footer-info a:hover {
+	color: #29cc6a;
 }
